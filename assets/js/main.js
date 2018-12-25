@@ -1,6 +1,16 @@
 'use strict'
 
-var scroll = new SmoothScroll('a[href*="#"]');
+
+/*
+    Scroll Animation
+*/
+
+var scroll = new SmoothScroll('a[href^="#about"]');
+
+
+/**
+ * ChartsJs
+ */
 
 var ctx = document.getElementById("skillsChart");
 var myChart = new Chart(ctx, {
@@ -13,18 +23,15 @@ var myChart = new Chart(ctx, {
             'Node.js',
             'Task Runners',
             'Python',
-            'Django',
-            'MongoDB',
             'C#',
             'SQLServer',
-            'MVC5',
             'NetCore',
             'Git & GitHub'],
         datasets: [{
             label: 'Skills',
             borderColor: '#3385ff',
             pointBackgroundColor: '#3385ff',
-            data: [75, 90, 60, 60, 50, 60, 50, 20, 30, 80, 70, 60, 60, 90]
+            data: [75, 90, 60, 60, 50, 60, 50, 80, 70, 70, 90]
         }]
     },
     options: {
@@ -39,3 +46,18 @@ var myChart = new Chart(ctx, {
     }
 });
 
+
+/**
+ * Timelinr
+ */
+
+
+$(function () {
+    $().timelinr({
+        orientation: 'vertical',
+        issuesSpeed: 300,
+        datesSpeed: 100,
+        autoPlay: 'true',
+        autoPlayDirection: 'forward'
+    })
+});
