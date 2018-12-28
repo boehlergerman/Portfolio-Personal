@@ -434,6 +434,81 @@ a:focus {
     opacity: 0.2;
 }
 
+/* Work Section */
+
+.experience .item {
+    margin-bottom: 30px;
+}
+
+.experience .item .title {
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 5px;
+    line-height: 1.5;
+}
+
+.experience .item .title .place {
+    color: #999;
+    font-weight: normal;
+}
+
+.experience .item .title .place a {
+    color: #999;
+}
+
+.experience .item .title .place a:hover {
+    color: #666666;
+}
+
+.experience .item .title .year {
+    color: #999;
+    font-weight: normal;
+}
+
+.experience .tecnology {
+    font-style: italic;
+}
+
+/* Language Section */
+
+.languages .item {
+    margin-bottom: 15px;
+}
+
+.languages .item .title {
+    color: #778492;
+}
+
+.languages .item .level {
+    color: #999;
+}
+
+.languages .item:last-child {
+    margin-bottom: 0;
+}
+
+.languages .item .svg-inline--fa {
+    color: #79d19a;
+}
+
+/* List section */
+
+.list ul li {
+    margin-bottom: 10px;
+}
+
+.list ul li .svg-inline--fa {
+    margin-right: 5px;
+}
+
+.list ul li a {
+    color: #778492;
+}
+
+.list ul li a:hover {
+    color: #49515a;
+}
+
 /* ======= Footer ======= */
 
 .footer {
