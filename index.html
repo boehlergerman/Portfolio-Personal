@@ -8,13 +8,12 @@
     <meta name="description" content="Page person of Boehler German">
     <meta name="author" content="Boehler German">
     <link rel="shortcut icon" href="favicon.ico">
+    <link rel="prefetch" href="assets/i18n/british.json">
+    <link rel="prefetch" href="assets/i18n/spanish.json">
 
     <title>Boehler German Software Developer</title>
 
-    <!-- FontAwesome JS -->
-    <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js" integrity="sha384-3LK/3kTpDE/Pkp8gTNp2gR/2gOiwQ6QaO7Td0zV76UFJVhqLl4Vl3KL1We6q6wR9"
-        crossorigin="anonymous"></script>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <!-- build:css -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/main.css" />
@@ -22,28 +21,43 @@
 </head>
 
 <body>
+    <!-- Preload -->
+    <div id="loading-mask">
+        <div class="loading-img">
+            <div class="spinner">
+                <div class="dot1"></div>
+                <div class="dot2"></div>
+            </div>
+        </div>
+    </div>
 
     <header class="header">
         <div class="container clearfix">
+            <div id='languages'>
+                <img src="assets/images/if_GB_167794.png" class='language' data-lang='british' alt='British Flag' />
+                <img src="assets/images/if_SP_167808.png" class="language" data-lang="spanish" alt="Spanish Flag" />
+            </div>
+
             <div class="header-image">
-                <img src="assets/images/profile.png" alt="Boehler German" />
+                <img src="assets/images/profile.jpg" alt="Boehler German" />
             </div>
             <div class="header-text">
                 <h1>Boehler German</h1>
-                <p>Full-Stack Web Developer in Cordoba, Argentina</p>
+                <p>Full-Stack Web <span data-langkey="from"> Desarrollador en</span> Cordoba, Argentina</p>
             </div>
             <div class="header-social">
                 <ul class="ul-social">
                     <li class="li-social-links">
-                        <a class="social" href="https://github.com/" target="_blank"><i class="fab fa-github-alt"
+                        <a class="social" href="https://github.com/boehlergerman" target="_blank"><i class="fa fa-github-alt"
                                 aria-hidden="true"></i></a>
                     </li>
                     <li class="li-social-links">
-                        <a class="social" href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"
+                        <a class="social" href="https://www.linkedin.com/in/german-boehler/" target="_blank"><i class="fa fa-linkedin"
                                 aria-hidden="true"></i></a>
                     </li>
                     <li class="li-social-links">
-                        <a class="social" href="https://plus.google.com/" target="_blank"><i class="fab fa-google-plus-g"></i></a>
+                        <a class="social" href="https://plus.google.com/u/0/117975437430856793682" target="_blank"><i
+                                class="fa fa-google-plus"></i></a>
                     </li>
                 </ul>
             </div>
@@ -60,16 +74,16 @@
             <div class="primary col-lg-8 col-12">
                 <section id="about" class="about section">
                     <div class="section-inner">
-                        <h2 class="heading">Sobre Mi</h2>
+                        <h2 data-langkey="about" class="heading">Sobre Mi</h2>
                         <div class="content">
-                            <p>
-                                Hola, soy German (como el youtuber), un desarollador de aplicaciones web con más de 4
-                                años
-                                de experiencia en una amplia gama de lenguajes y framework. En la actualidad, muy
+                            <p data-langkey="about-p1">
+                                Hola, soy German, un desarollador de aplicaciones web, bajista y nadador, de 25 años de
+                                edad y casi 7 año de experiencia en
+                                el desarrollo web. En la actualidad, muy
                                 concentrado en mantener actualizado mis conocimientos en torno al mundo JavaScript y
                                 Machine Learning.
                             </p>
-                            <p>
+                            <p data-langkey="about-p2">
                                 Mi trayectoria como desarrollador comenzó ya a los 15 años cuando ingrese al CE con la
                                 especialidad de Técnico Programador. Después de eso obtuve mi Tecnicatura Superior en
                                 Programación, en la Universidad Tecnológica Nacional. Esto me ha ayudado a ampliar mi
@@ -91,37 +105,37 @@
 
                 <section class="latest section">
                     <div class="section-inner">
-                        <h2 class="heading">Ultimo Proyecto</h2>
+                        <h2 data-langkey="lastProyect" class="heading">Ultimo Proyecto</h2>
                         <div class="content">
                             <div class="item featured text-center">
-                                <h3 class="title"><a href="https://github.com/boehlergerman/WebWhatsapp-Wrapper" target="_blank">WappBot</a></h3>
-                                <p class="summary">Bot de respuesta automática para Whatsapp</p>
-                                <div class="featured-image has-ribbon">
-                                    <a href="https://github.com/boehlergerman/WebWhatsapp-Wrapper" target="_blank">
-                                        <img class="img-fluid project-image" src="assets/images/project/web.jpg" alt="project name" />
-                                    </a>
-                                    <div class="ribbon">
-                                        <div class="text">New</div>
-                                    </div>
-                                </div>
+                                <h3 class="title"><a href="https://github.com/boehlergerman/WappBot" target="_blank">WappBot</a></h3>
+                                <p data-langkey="lastProyectTitle" class="summary">Bot de respuesta automática para
+                                    Whatsapp</p>
+                                <img class="img-fluid project-image" src="https://media.giphy.com/media/2wV5JpcAVuzOIrVnRb/giphy.gif"
+                                    alt="project name" />
+                                <img class="img-fluid project-image" src="https://media.giphy.com/media/5z9tVCWPbVH1YHtLJS/giphy.gif"
+                                    alt="project name" />
+                                <img class="img-fluid project-image" src="https://media.giphy.com/media/BZhzk2WiFuaB7g2cRp/giphy.gif"
+                                    alt="project name" />
 
                                 <div class="desc text-left">
-                                    <p>Utilizando los módulos de WebPack almacenados en memoria por Whatswapp Web se
+                                    <p data-langkey="lastProyect-p1">Utilizando los módulos de WebPack almacenados en
+                                        memoria por Whatswapp Web se
                                         explota los metodos ya identificados para luego realizar acciones de lectura de
                                         entrantes, envió de respuesta automática, entre otras funcionalidades.</p>
-                                    <p>
-                                        Con este se consigue que al momento de recibir un mensaje el watch lo detecte e
+                                    <p data-langkey="lastProyect-p2">
+                                        Con esto se consigue que al momento de recibir un mensaje el watch lo detecte e
                                         inmediatamente envié un mensaje, además cuenta con la posibilidades de
                                         personalizar y decidir que responder, el objetivo es continuar integrando la
                                         herramienta con funcionalidades de aprendizaje automatico y respuesta
                                         inteligente.
                                     </p>
                                 </div>
-                                <iframe src="https://ghbtns.com/github-btn.html?user=boehlergerman&repo=Portfolio-Personal&type=star&count=true&size=large"
+                                <iframe src="https://ghbtns.com/github-btn.html?user=boehlergerman&repo=WappBot&type=star&count=true&size=large"
                                     frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
-                                <iframe src="https://ghbtns.com/github-btn.html?user=boehlergerman&repo=Portfolio-Personal&type=watch&count=true&size=large&v=2"
+                                <iframe src="https://ghbtns.com/github-btn.html?user=boehlergerman&repo=WappBot&type=watch&count=true&size=large&v=2"
                                     frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
-                                <iframe src="https://ghbtns.com/github-btn.html?user=boehlergerman&repo=Portfolio-Personal&type=fork&count=true&size=large"
+                                <iframe src="https://ghbtns.com/github-btn.html?user=boehlergerman&repo=WappBot&type=fork&count=true&size=large"
                                     frameborder="0" scrolling="0" width="158px" height="30px"></iframe>
                             </div>
                             <!--//item-->
@@ -133,10 +147,10 @@
                                 </div>
 
                                 <div class="desc col-md-8 col-12">
-                                    <h3 class="title">Detección de emociones</h3>
-                                    <p class="mb-2">
+                                    <h3 data-langkey="title-py1" class="title">Detección de emociones</h3>
+                                    <p data-langkey="py1-p1" class="mb-2">
                                         Un proyecto que comenzó con la curiosidad, luego del ultimo congreso de
-                                        CONAIISI, indignado con las diferentes herramientas y conceptos sobre como
+                                        CONAIISI, indagando con las diferentes herramientas y conceptos sobre como
                                         detectar si un individuo esta enojado o feliz según las reacciones que expresa
                                         con su actividad (especificamente información recolectada del historial de chat
                                         de Whatsapp).
@@ -152,8 +166,10 @@
                                 </div>
 
                                 <div class="desc col-md-8 col-12">
-                                    <h3 class="title">Ministerio de Agua, Ambiente y Servicios Públicos</h3>
-                                    <p class="mb-2">Colaborando con un excelente equipo en el desarollo de la
+                                    <h3 data-langkey="title-py2" class="title">Ministerio de Agua, Ambiente y Servicios
+                                        Públicos</h3>
+                                    <p data-langkey="py2-p1" class="mb-2">Colaborando con un excelente equipo en el
+                                        desarollo de la
                                         plataforma para las diferentes audiencias publicas que se realizan en el
                                         ministerio de agua, ambiente y servicios públicos</p>
                                 </div>
@@ -168,8 +184,9 @@
                                 </div>
 
                                 <div class="desc col-md-8 col-12">
-                                    <h3 class="title">Codigo Procrastinación</h3>
-                                    <p class="mb-2">Quiero creer que a la mayoría en el rubro le debe pasar que se
+                                    <h3 data-langkey="title-py3" class="title">Codigo Procrastinación</h3>
+                                    <p data-langkey="py3-p1" class="mb-2">Quiero creer que a la mayoría en el rubro le
+                                        debe pasar que se
                                         aburre con los proyecto para las organizaciones, por eso es agradable que tenga
                                         su lugar un conjunto de proyecto de Procrastinación e investigación, ya sea
                                         juegos en html puro para experimentar el uso de canvas, o python para hacer
@@ -188,8 +205,9 @@
                                 </div>
 
                                 <div class="desc col-md-8 col-12">
-                                    <h3 class="title">Gestion Gastronomica</h3>
-                                    <p class="mb-2">Sistema modular que permite la gestión, administración y
+                                    <h3 data-langkey="title-py4" class="title">Gestion Gastronomica</h3>
+                                    <p data-langkey="py4-p1" class="mb-2">Sistema modular que permite la gestión,
+                                        administración y
                                         planeamiento de las áreas involucradas en la realizacion de ventas y
                                         reservaciones de mesas para resutrantes o eventos, con un sistema flexible a
                                         las dinamicas de las diferentes empresas y abarcando gestion financiera</p>
@@ -204,8 +222,9 @@
                                 </div>
 
                                 <div class="desc col-md-8 col-12">
-                                    <h3 class="title">CRM - Gestion Hotelera</h3>
-                                    <p class="mb-2">Sistema modular que permite la gestión, administración y
+                                    <h3 data-langkey="title-py5" class="title">CRM - Gestion Hotelera</h3>
+                                    <p data-langkey="py5-p1" class="mb-2">Sistema modular que permite la gestión,
+                                        administración y
                                         planeamiento de las áreas involucradas en el gerenciamiento de un hotel,
                                         abarcando el control de las estadias y el funcionamiento de la comanda del
                                         restaurante / cantina</p>
@@ -220,11 +239,28 @@
                                 </div>
 
                                 <div class="desc col-md-8 col-12">
-                                    <h3 class="title">ERP - Administración de empresas</h3>
-                                    <p class="mb-2">Sistema modular que permite la gestión, administración y
+                                    <h3 data-langkey="title-py6" class="title">ERP - Administración de empresas</h3>
+                                    <p data-langkey="py6-p1" class="mb-2">Sistema modular que permite la gestión,
+                                        administración y
                                         planeamiento de las áreas involucradas en el gerenciamiento de una
                                         organización, tales como producción, la logística, el inventario, los envíos y
                                         la contabilidad, etc.</p>
+                                </div>
+                                <!--//desc-->
+                            </div>
+                            <!--//item-->
+
+                            <div class="item row">
+                                <div class="col-md-4 col-12">
+                                    <img class="img-fluid project-image" src="assets/images/project/v1.jpg" alt="pymen" />
+                                </div>
+
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title"><a href="https://v1.boehlergerman.com.ar/" target="_blank"><span
+                                                data-langkey="title-py7">La V1</span></a></h3>
+                                    <p data-langkey="py7-p1" class="mb-2">Prohibido olvidarla, la primera version de mi
+                                        sitio web, con otra estrategia de muestreo de contenido, y unos cubos que
+                                        siempre me tiento de poner en todas las versiones.</p>
                                 </div>
                                 <!--//desc-->
                             </div>
@@ -235,41 +271,47 @@
 
                 <section class="experience section">
                     <div class="section-inner">
-                        <h2 class="heading">Experiencia Laboral</h2>
+                        <h2 data-langkey="experience" class="heading">Experiencia Laboral</h2>
                         <div class="content">
                             <div class="item">
                                 <h3 class="title">Developer Full Stack - <span class="place"><a href="#">Teleprom</a></span>
-                                    <span class="year">(Marzo 2018 - Marzo 2019)</span></h3>
-                                <p>Proyecto de mensajería integrado con whatsapp y web de gestión de diversos servicios
+                                    <span data-langkey="experience1-date" class="year">(Marzo 2018 - Marzo 2019)</span></h3>
+                                <p data-langkey="experience1-p1">Proyecto de mensajería integrado con whatsapp y web de
+                                    gestión de diversos servicios
                                     de contact center.</p>
                                 <span class="tecnology">
-                                    <p><b>Tecnologías utilizadas: </b> Angular 6 - NetCore - MySql - Javascript - Git -
-                                        Entre otras</p>
+                                    <p><b data-langkey="tecnology">Tecnologías utilizadas: </b> Angular 6 - NetCore -
+                                        MySql - Javascript - Git -
+                                        <span data-langkey="amongOthers">Entre otras</span></p>
                                 </span>
                             </div>
                             <!--//item-->
                             <div class="item">
                                 <h3 class="title">Developer Full Stack / Analyst - <span class="place"><a href="#">Dicsys</a></span>
-                                    <span class="year">(Junio 2017 - Enero 2018)</span></h3>
-                                <p>Compartiendo la experiencia de trabajar en un proyecto para la provincia de cordoba.</p>
+                                    <span data-langkey="experience2-date" class="year">(Junio 2017 - Enero 2018)</span></h3>
+                                <p data-langkey="experience2-p1">Compartiendo la experiencia de trabajar en un proyecto
+                                    para la provincia de cordoba.</p>
                                 <span class="tecnology">
-                                    <p><b>Tecnologías utilizadas: </b> Angular 4 - .Net - MySql</p>
+                                    <p><b data-langkey="tecnology">Tecnologías utilizadas: </b> Angular 4 - .Net -
+                                        MySql</p>
                                 </span>
                             </div>
                             <!--//item-->
 
                             <div class="item">
                                 <h3 class="title">Software Developer - <span class="place"><a href="#">Ingesoft</a></span>
-                                    <span class="year">(Octubre 2012 - Junio 2017)</span></h3>
-                                <p>Observando todo el proceso de creación de una aplicación desde el análisis y diseño
+                                    <span data-langkey="experience3-date" class="year">(Octubre 2012 - Junio 2017)</span></h3>
+                                <p data-langkey="experience3-p1">Observando todo el proceso de creación de una
+                                    aplicación desde el análisis y diseño
                                     hasta la implementación,
                                     consiguiendo superar todos los objetivos propuestos.</p>
                                 <span class="tecnology">
-                                    <p><b>Tecnologías utilizadas: </b>3 años dedicados plenamente a .Net (MVC - Entity
-                                        Framework, etc) + SQL server + Variantes de FrontEnd (HTML,
-                                        CSS, SASS, etc.) + Uso de task runner (gulp, grunt, etc) + Test Unit
-                                        1 ½ de desarrollo en diversas tecnologías e investigación (Python, NodeJs,
-                                        MongoDB, PHP, MySql, etc. )</p>
+                                    <p><b data-langkey="tecnology">Tecnologías utilizadas: </b><span data-langkey="experience3-p2">3
+                                            años dedicados plenamente a .Net (MVC - Entity
+                                            Framework, etc) + SQL server + Variantes de FrontEnd (HTML,
+                                            CSS, SASS, etc.) + Uso de task runner (gulp, grunt, etc) + Test Unit
+                                            1 ½ de desarrollo en diversas tecnologías e investigación (Python, NodeJs,
+                                            MongoDB, PHP, MySql, etc. )</span></p>
                                 </span>
                             </div>
                             <!--//item-->
@@ -286,13 +328,14 @@
             <div class="secondary col-lg-4 col-12">
                 <aside class="info aside section">
                     <div class="section-inner">
-                        <h2 class="heading sr-only">Información Basica</h2>
+                        <h2 data-langkey="basicInformation" class="heading sr-only">Información Basica</h2>
                         <div class="content">
                             <ul class="list-unstyled">
-                                <li><i class="fas fa-map-marker-alt"></i><span class="sr-only">Location:</span>Cordoba
+                                <li><i class="fa fa-map-marker"></i><span class="sr-only">Location:</span>Cordoba
                                     Capita, Argentina</li>
-                                <li><i class="fas fa-envelope"></i><span class="sr-only">Email:</span><a href="#">germanboehler@gmail.com</a></li>
-                                <li><i class="fas fa-link"></i><span class="sr-only">Website:</span><a href="#">https://www.boehlergerman.com</a></li>
+                                <li><i id="envelope" class="fa fa-envelope"></i><span class="sr-only">Email:</span><a
+                                        href="#">germanboehler@gmail.com</a></li>
+                                <li><i class="fa fa-link"></i><span class="sr-only">Website:</span><a href="#">https://www.boehlergerman.com</a></li>
                             </ul>
                         </div>
                         <!--//content-->
@@ -305,7 +348,7 @@
                     <div class="section-inner">
                         <h2 class="heading">Skills</h2>
                         <div class="content">
-                            <p class="intro">
+                            <p data-langkey="skills" class="intro">
                                 Mis skills están orientados principalmente en torno a lenguajes como: Javascript y C#,
                                 pero la curiosidad siempre me terminan llevando ampliarlos y seguir conociendo las
                                 ventajas y desventajas de las diferentes herramientas que existen, haciendo que el
@@ -322,7 +365,7 @@
 
                 <aside class="life aside section">
                     <div class="section-inner">
-                        <h2 class="heading">Experiencia - Educación</h2>
+                        <h2 data-langkey="life" class="heading">Experiencia - Educación</h2>
                         <div class="content">
 
                             <div id="timeline">
@@ -340,82 +383,65 @@
                                     <li id="2018" class="selected">
                                         <img src="assets/images/life/TELEPROM.png" />
                                         <h1>2018</h1>
-                                        <p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea
-                                            dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices
-                                            mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget
-                                            molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin
-                                            venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non
-                                            vel leo. Sed fringilla porta ligula.</p>
+                                        <p data-langkey="p-2018">Desde marzo del año 2018 hasta marzo del 2019
+                                            integrando el equipo de
+                                            telepromers, desarrollando una API de contacto masivo por medio de
+                                            Whatsapp.</p>
                                     </li>
                                     <li id="2017">
                                         <img src="assets/images/life/dicsys.jpg" />
                                         <h1>2017</h1>
-                                        <p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea
-                                            dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices
-                                            mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget
-                                            molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin
-                                            venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non
-                                            vel leo. Sed fringilla porta ligula.</p>
+                                        <p data-langkey="p-2017">Desde junio del 2017 hasta enero del 2018 integrando
+                                            el equipo encargado de
+                                            desarrollando la web para el ministerio de agua y servicios públicos de la
+                                            provincia de córdoba.</p>
                                     </li>
                                     <li id="2017">
                                         <img src="assets/images/life/puma.png" />
                                         <h1>2017</h1>
-                                        <p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea
-                                            dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices
-                                            mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget
-                                            molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin
-                                            venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non
-                                            vel leo. Sed fringilla porta ligula.</p>
+                                        <p data-langkey="p2-2017">Durante el año 2017 forme parte de un proyecto de
+                                            investigación en la
+                                            facultad regional cordoba de la universidad tecnologica nacional, en el
+                                            cual vive la experiencia de desarrollar un meta lenguaje de programacion
+                                            basado en javascript y presentarlo en CONAIISI 2017.</p>
                                     </li>
                                     <li id="2016">
                                         <img src="assets/images/life/utn.jpg" />
                                         <h1>2016</h1>
-                                        <p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea
-                                            dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices
-                                            mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget
-                                            molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin
-                                            venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non
-                                            vel leo. Sed fringilla porta ligula.</p>
+                                        <p data-langkey="p-2016">Inicio de la carrera de Ingeniería de Sistemas en la
+                                            Facultad Regional
+                                            Córdoba Universidad Tecnológica Nacional, carrera la cual aun mantengo en
+                                            curso.</p>
                                     </li>
                                     <li id="2014">
                                         <img src="assets/images/life/egreso.jpg" />
                                         <h1>2014</h1>
-                                        <p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea
-                                            dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices
-                                            mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget
-                                            molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin
-                                            venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non
-                                            vel leo. Sed fringilla porta ligula.</p>
+                                        <p data-langkey="p-2014">Obtención del titulo Terciario de Técnico Superior En
+                                            Programación, otorgado
+                                            por la universidad tecnológica nacional.</p>
                                     </li>
                                     <li id="2012">
                                         <img src="assets/images/life/ingesoft.png" />
                                         <h1>2012</h1>
-                                        <p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea
-                                            dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices
-                                            mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget
-                                            molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin
-                                            venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non
-                                            vel leo. Sed fringilla porta ligula.</p>
+                                        <p data-langkey="p-2012">Octubre del 2012 hasta Junio del 2017, mi primera
+                                            experiencia con 18 año en
+                                            el rubro del desarrollo de aplicaciones web, siendo esta la empresa que me
+                                            abrió el camino a conocer muchas tecnologías.</p>
                                     </li>
                                     <li id="2012">
                                         <img src="assets/images/life/utn.jpg" />
                                         <h1>2012</h1>
-                                        <p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea
-                                            dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices
-                                            mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget
-                                            molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin
-                                            venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non
-                                            vel leo. Sed fringilla porta ligula.</p>
+                                        <p data-langkey="p2-2012">Inicio de la carrera Técnico Superior en
+                                            programación, en la facultad
+                                            regional córdoba, Universidad Tecnológica Nacional.</p>
                                     </li>
                                     <li id="2009">
                                         <img src="assets/images/life/sabattini.png" />
                                         <h1>2009</h1>
-                                        <p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea
-                                            dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices
-                                            mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget
-                                            molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin
-                                            venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non
-                                            vel leo. Sed fringilla porta ligula.</p>
+                                        <p data-langkey="p-2009">Inicio del Ciclo Especializado, siendo la primera
+                                            camada de programadores de
+                                            la ciudad de córdoba y marcando el comienzo de mi carrera en el rubro que
+                                            amo</p>
                                     </li>
                                 </ul>
                                 <a href="#" id="next">+</a>
@@ -432,22 +458,23 @@
 
                 <aside class="languages aside section">
                     <div class="section-inner">
-                        <h2 class="heading">Lenguajes</h2>
+                        <h2 data-langkey="languages" class="heading">Lenguajes</h2>
                         <div class="content">
                             <ul class="list-unstyled">
                                 <li class="item">
-                                    <span class="title"><strong>Español:</strong></span>
-                                    <span class="level">Lenguaje Nativo <br class="visible-xs" /><i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i> </span>
+                                    <span data-langkey="spanish" class="title"><strong>Español:</strong></span>
+                                    <span class="level"><span data-langkey="languagesNative"> Lenguaje Nativo</span><br
+                                            class="visible-xs" /><i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i> </span>
                                 </li>
                                 <!--//item-->
                                 <li class="item">
-                                    <span class="title"><strong>English:</strong></span>
-                                    <span class="level">Capacidad profesional <br class="visible-sm visible-xs" /><i
-                                            class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star-half"></i></span>
+                                    <span data-langkey="english" class="title"><strong>Ingles:</strong></span>
+                                    <span class="level"><span data-langkey="englishLevel">Capacidad profesional</span><br
+                                            class="visible-sm visible-xs" /><i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star-half"></i></span>
                                 </li>
                                 <!--//item-->
                             </ul>
@@ -460,18 +487,18 @@
 
                 <aside class="list music aside section">
                     <div class="section-inner">
-                        <h2 class="heading">Musica favorita para codear</h2>
+                        <h2 data-langkey="music" class="heading">Musica favorita para codear</h2>
                         <div class="content">
                             <ul class="list-unstyled">
-                                <li><i class="fas fa-headphones"></i> <a href="https://www.youtube.com/watch?v=1WIZVeUgdC8&list=PL70C21ED2A03CB6EB"
+                                <li><i class="fa fa-headphones"></i> <a href="https://www.youtube.com/watch?v=1WIZVeUgdC8&list=PL70C21ED2A03CB6EB"
                                         target="_blank">Almafuerte</a></li>
-                                <li><i class="fas fa-headphones"></i> <a href="https://www.youtube.com/watch?v=YlUKcNNmywk&list=PLF107121A7BCBF1A5"
+                                <li><i class="fa fa-headphones"></i> <a href="https://www.youtube.com/watch?v=YlUKcNNmywk&list=PLF107121A7BCBF1A5"
                                         target="_blank">Red hot chili peppers</a></li>
-                                <li><i class="fas fa-headphones"></i> <a href="https://www.youtube.com/watch?v=w8KQmps-Sog&start_radio=1&list=RDEMkAOEm1CPxu8qwfZA1NTvig"
+                                <li><i class="fa fa-headphones"></i> <a href="https://www.youtube.com/watch?v=w8KQmps-Sog&start_radio=1&list=RDEMkAOEm1CPxu8qwfZA1NTvig"
                                         target="_blank">Muse</a></li>
-                                <li><i class="fas fa-headphones"></i> <a href="https://open.spotify.com/playlist/29UOO5MhiDNoiiK9QV6rlv"
+                                <li><i class="fa fa-headphones"></i> <a href="https://open.spotify.com/playlist/29UOO5MhiDNoiiK9QV6rlv"
                                         target="_blank">Mepes Group Spotify</a></li>
-                                <li><i class="fas fa-headphones"></i> <a href="https://www.youtube.com/watch?v=-WtmVfCiNTQ&t=1411s"
+                                <li><i class="fa fa-headphones"></i> <a href="https://www.youtube.com/watch?v=-WtmVfCiNTQ&t=1411s"
                                         target="_blank">Los Antiguos</a></li>
                             </ul>
                         </div>
@@ -483,18 +510,34 @@
 
                 <aside class="list conferences aside section">
                     <div class="section-inner">
-                        <h2 class="heading">Conferencia e investigación</h2>
+                        <h2 data-langkey="conference" class="heading">Conferencia e investigación</h2>
                         <div class="content">
                             <ul class="list-unstyled">
                                 <li><i class="far fa-calendar-alt"></i> <a href="#" target="_blank">CONAIISI 2017</a>
                                     (Santa Fe) <br>
-                                    <p>Presentación de papper "Cambiando la manera de escribir JavaScript"</p>
+                                    <p data-langkey="pumaTitle">Presentación de papper "Cambiando la manera de escribir
+                                        JavaScript"</p>
                                 </li>
                             </ul>
-                            <p>Una experiencia increible, con mucho conocimiento adquirido de la mano del excelente
+                            <p data-langkey="puma-p1">Una experiencia increible, con mucho conocimiento adquirido de la
+                                mano del excelente
                                 equipo que forma el grupo de investigación PumaScript de la universidad tecnologica
                                 nacional</p>
                             <img class="img-fluid project-image" src="assets/images/puma.jpg" alt="pymen" />
+                            <p data-langkey="puma-p2">
+                                PumaScript es un lenguaje de programación de investigación que agrega capacidades de
+                                meta-programación a JavaScript y se desarrolla en la Universidad Tecnológica Nacional
+                                (UTN-FRC) de Córdoba, Argentina.
+                            </p>
+                            <p data-langkey="puma-p3">
+                                Tiene exactamente la misma sintaxis y semántica que el JavaScript normal, además de
+                                capacidades de metaprogramación como introspección y funciones de reescritura.
+                                Varias características de PumaScript están basadas en el proyecto LayerD. Que es un
+                                marco de metaprogramación para lenguajes estáticos.
+                            </p>
+                            <p><a class="more-link" href="https://github.com/pumascript/puma" target="_blank"><i class="fa fa-external-link"></i><span
+                                        data-langkey="viewGithub">Ver
+                                        en GitHub</span></a></p>
                         </div>
                         <!--//content-->
                     </div>
