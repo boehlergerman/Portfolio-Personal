@@ -121,7 +121,7 @@ a:focus {
 
 .header A:hover,
 .header A:visited {
-    color: white;
+    /*color: white;*/
     text-decoration: none
 }
 
