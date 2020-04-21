@@ -59,5 +59,6 @@
     "puma-p1":"Una experiencia increible, con mucho conocimiento adquirido de la mano del excelente equipo que forma el grupo de investigación PumaScript de la universidad tecnologica nacional",
     "puma-p2":"PumaScript es un lenguaje de programación de investigación que agrega capacidades de meta-programación a JavaScript y se desarrolla en la Universidad Tecnológica Nacional (UTN-FRC) de Córdoba, Argentina.",
     "puma-p3":"Tiene exactamente la misma sintaxis y semántica que el JavaScript normal, además de capacidades de metaprogramación como introspección y funciones de reescritura. Varias características de PumaScript están basadas en el proyecto LayerD. Que es un marco de metaprogramación para lenguajes estáticos.",
-    "viewGithub":"Ver en GitHub"
+    "viewGithub":"Ver en GitHub",
+    "cv":"Descargar Curriculum vitae"
 }
